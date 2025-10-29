@@ -4,13 +4,16 @@ obj/
 out/
 *.user
 *.suo
+
+# SQLite
 *.db
 *.db-shm
 *.db-wal
 app
+
+# Secrets
 .env
 secrets.json
+
+# Git metadata
 .git
-.gitignore
-Dockerfile
-docker-compose.yml
