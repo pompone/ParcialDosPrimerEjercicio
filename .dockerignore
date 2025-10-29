@@ -1,0 +1,16 @@
+.vs/
+bin/
+obj/
+out/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+app
+.env
+secrets.json
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
