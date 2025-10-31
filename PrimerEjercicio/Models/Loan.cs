@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace PrimerEjercicio.Models
 {
@@ -10,8 +10,17 @@ namespace PrimerEjercicio.Models
         public int MemberId { get; set; }
         public Member? Member { get; set; }
 
-        [DataType(DataType.Date)] public DateTime LoanDate { get; set; } = DateTime.Today;
-        [DataType(DataType.Date)] public DateTime DueDate { get; set; } = DateTime.Today.AddDays(14);
-        [DataType(DataType.Date)] public DateTime? ReturnDate { get; set; }
+        [Display(Name = "Fecha de préstamo")]
+        [DataType(DataType.Date)]
+        public DateTime LoanDate { get; set; } = DateTime.Today;
+
+        [Display(Name = "Fecha de devolución")]
+        [DataType(DataType.Date)]
+        public DateTime DueDate { get; set; } = DateTime.Today.AddDays(14);
+
+        [Display(Name = "Fecha de devolución real")]
+        [DataType(DataType.Date)]
+        public DateTime? ReturnDate { get; set; }
     }
 }
+
